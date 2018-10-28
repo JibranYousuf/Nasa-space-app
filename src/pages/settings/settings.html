@@ -1,0 +1,52 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-100>
+        <ion-list>
+          <form (ngSubmit)="saveForm()">
+            <ion-item>
+              <ion-label fixed>
+                City
+              </ion-label>
+              <ion-input [(ngModel)]="city" name="city" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label fixed>
+                  State
+                </ion-label>
+                <ion-input [(ngModel)]="state" name="state" type="text"></ion-input>
+              </ion-item>
+              <button ion-button type="submit" block>Save Changes</button>
+          </form>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<!-- <ion-header>
+    <ion-navbar>
+      <ion-title>Settings And More</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-row>
+      <ion-col width-100>
+        <img src="../../assets/imgs/d37b626c-4745-4062-9b67-23ec5a30d1e8.jpg" alt="">
+      </ion-col>
+    </ion-row>
+    <ion-list>
+      <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+        {{ item }}
+      </button>
+    </ion-list>
+  </ion-content> -->

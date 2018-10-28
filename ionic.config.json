@@ -1,0 +1,7 @@
+{
+  "name": "myionicapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

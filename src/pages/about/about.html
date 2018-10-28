@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>
+      Feeds
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment  [(ngModel)]="pet">
+      <ion-segment-button class="top-bar" value="puppies">
+        Top Stories
+      </ion-segment-button>
+      <ion-segment-button class="top-bar" value="kittens">
+        Latest
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'puppies'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/imgs/nasa-img1.jpg">
+        </ion-thumbnail>
+        <h2>Solor Wind</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis molestiae sunt eum quasi at minima quod aliquid laborum assumenda mollitia similique provident, sint beatae reiciendis veritatis voluptatem minus est saepe?</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/imgs/nasa-img2.jpg">
+        </ion-thumbnail>
+        <h2>Radio Waves</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis molestiae sunt eum quasi at minima quod aliquid laborum assumenda mollitia similique provident, sint beatae reiciendis veritatis voluptatem minus est saepe?</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/imgs/nasa-img3.jpg">
+        </ion-thumbnail>
+        <h2>Energy Bursts</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis molestiae sunt eum quasi at minima quod aliquid laborum assumenda mollitia similique provident, sint beatae reiciendis veritatis voluptatem minus est saepe?</p>
+
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/imgs/nasa-img4.jpg">
+        </ion-thumbnail>
+        <h2>Hubble Spies Glittering Star Cluster in Nearby</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis molestiae sunt eum quasi at minima quod aliquid laborum assumenda mollitia similique provident, sint beatae reiciendis veritatis voluptatem minus est saepe?</p>
+
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'kittens'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/imgs/nasa-img1.jpg">
+        </ion-thumbnail>
+        <h2>Launching the Galileo Mission</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatum inventore ipsum minima voluptatibus fugiat cum ut, quisquam perspiciatis soluta, libero minus eius doloremque illum sequi magni deserunt eaque molestias!</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/imgs/nasa-img2.jpg">
+        </ion-thumbnail>
+        <h2>Magnetic Fields May Be the Key to Black </h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatum inventore ipsum minima voluptatibus fugiat cum ut, quisquam perspiciatis soluta, libero minus eius doloremque illum sequi magni deserunt eaque molestias!</p>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/imgs/nasa-img3.jpg">
+        </ion-thumbnail>
+        <h2>Bandit</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatum inventore ipsum minima voluptatibus fugiat cum ut, quisquam perspiciatis soluta, libero minus eius doloremque illum sequi magni deserunt eaque molestias!</p>
+
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/imgs/nasa-img4.jpg">
+        </ion-thumbnail>
+        <h2>Nala</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatum inventore ipsum minima voluptatibus fugiat cum ut, quisquam perspiciatis soluta, libero minus eius doloremque illum sequi magni deserunt eaque molestias!</p>
+
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
